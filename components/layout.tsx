@@ -1,5 +1,5 @@
-import React, { ReactNode, useContext, useEffect, useState } from "react"
-import styles from "../css/layout.module.css"
+import React, { ReactNode, useContext, useEffect, useState } from 'react'
+import styles from '../css/layout.module.css'
 
 interface LayoutProps {
   children?: ReactNode

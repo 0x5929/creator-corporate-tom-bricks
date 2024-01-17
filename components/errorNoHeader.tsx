@@ -1,4 +1,4 @@
-import styles from "../css/errorNoHeader.module.css"
+import styles from '../css/errorNoHeader.module.css'
 
 const ErrorNoHeader = () => {
   return (
