@@ -1,6 +1,6 @@
-import React from "react"
-import { Text, Repeater, types } from "react-bricks/frontend"
-import styles from "../../../css/FooterColumn.module.css"
+import React from 'react'
+import { Text, Repeater, types } from 'react-bricks/frontend'
+import styles from '../../../css/FooterColumn.module.css'
 
 interface FooterColumnProps {}
 
@@ -20,21 +20,21 @@ const FooterColumn: types.Brick<FooterColumnProps> = (props) => {
 }
 
 FooterColumn.schema = {
-  name: "footer-column",
-  label: "Column",
-  category: "layout",
+  name: 'footer-column',
+  label: 'Column',
+  category: 'layout',
   hideFromAddMenu: true,
   // tags: [],
   repeaterItems: [
     {
-      name: "links",
-      itemType: "footer-link",
+      name: 'links',
+      itemType: 'footer-link',
     },
   ],
 
   // Defaults when a new brick is added
   getDefaultProps: () => ({
-    title: "Features",
+    title: 'Features',
   }),
 
   // Sidebar Edit controls for props

@@ -43,8 +43,8 @@ const FeatureItem: types.Brick<FeatureItemProps> = ({
     >
       {withIcon && (
         <Image
-          propName="image"
-          alt="feature"
+          propName='image'
+          alt='feature'
           aspectRatio={1}
           imageClassName={styles.imageClassName}
           renderWrapper={({ children }) => {
@@ -55,15 +55,15 @@ const FeatureItem: types.Brick<FeatureItemProps> = ({
 
       <div className={styles.textFeatureItemContainer}>
         <Text
-          propName="title"
-          placeholder="Title..."
+          propName='title'
+          placeholder='Title...'
           renderBlock={(props) => (
             <div className={styles.title}>{props.children}</div>
           )}
         />
         <Text
-          propName="text"
-          placeholder="Title..."
+          propName='text'
+          placeholder='Title...'
           renderBlock={(props) => (
             <div className={styles.textColor}>{props.children}</div>
           )}
@@ -80,22 +80,22 @@ const FeatureItem: types.Brick<FeatureItemProps> = ({
               <div>
                 <Text
                   renderBlock={(props) => <p>{props.children}</p>}
-                  placeholder="Link..."
-                  propName="linkText"
+                  placeholder='Link...'
+                  propName='linkText'
                 />
               </div>
               <svg
-                viewBox="0 0 14 14"
-                width="14px"
-                height="14px"
+                viewBox='0 0 14 14'
+                width='14px'
+                height='14px'
                 className={classNames(
                   styles.svgClass,
                   linkTextPlain ? styles.linkTextPlain2 : styles.linkTextPlain3
                 )}
               >
                 <path
-                  fill="currentColor"
-                  d="m11.1 7.35-5.5 5.5a.5.5 0 0 1-.7-.7L10.04 7 4.9 1.85a.5.5 0 1 1 .7-.7l5.5 5.5c.2.2.2.5 0 .7Z"
+                  fill='currentColor'
+                  d='m11.1 7.35-5.5 5.5a.5.5 0 0 1-.7-.7L10.04 7 4.9 1.85a.5.5 0 1 1 .7-.7l5.5 5.5c.2.2.2.5 0 .7Z'
                 ></path>
               </svg>
             </Link>

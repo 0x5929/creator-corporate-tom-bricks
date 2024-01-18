@@ -47,8 +47,8 @@ const Button: types.Brick<ButtonProps> = ({
         simpleAnchor={simpleAnchorLink}
       >
         <Text
-          propName="text"
-          placeholder="Action"
+          propName='text'
+          placeholder='Action'
           renderBlock={({ children }) => <span>{children}</span>}
         />
       </Link>
@@ -73,8 +73,8 @@ const Button: types.Brick<ButtonProps> = ({
       )}
     >
       <Text
-        propName="text"
-        placeholder="Action"
+        propName='text'
+        placeholder='Action'
         renderBlock={({ children }) => <span>{children}</span>}
       />
     </button>

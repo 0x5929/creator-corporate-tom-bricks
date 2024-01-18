@@ -1,8 +1,8 @@
-import styles from "../../../css/HeaderMenuSubItem.module.css"
+import styles from '../../../css/HeaderMenuSubItem.module.css'
 
-import React from "react"
-import { Text, types, Link } from "react-bricks/frontend"
-import { FiChevronRight } from "react-icons/fi"
+import React from 'react'
+import { Text, types, Link } from 'react-bricks/frontend'
+import { FiChevronRight } from 'react-icons/fi'
 
 interface HeaderMenuSubItemProps {
   linkPath: string
@@ -39,21 +39,21 @@ const HeaderMenuSubItem: types.Brick<HeaderMenuSubItemProps> = ({
 }
 
 HeaderMenuSubItem.schema = {
-  name: "header-menu-sub-item",
-  label: "Submenu Item",
-  category: "layout",
+  name: 'header-menu-sub-item',
+  label: 'Submenu Item',
+  category: 'layout',
   hideFromAddMenu: true,
 
   getDefaultProps: () => ({
-    linkText: "Changelog",
-    linkDescription: "Release notes for all React Bricks versions",
-    linkPath: "/",
+    linkText: 'Changelog',
+    linkDescription: 'Release notes for all React Bricks versions',
+    linkPath: '/',
   }),
 
   sideEditProps: [
     {
-      name: "linkPath",
-      label: "Link to...",
+      name: 'linkPath',
+      label: 'Link to...',
       type: types.SideEditPropType.Text,
     },
   ],

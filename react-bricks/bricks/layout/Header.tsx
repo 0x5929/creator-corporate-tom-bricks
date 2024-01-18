@@ -36,23 +36,23 @@ const Header: types.Brick<HeaderProps> = ({}) => {
   return (
     <section className={styles.section}>
       <nav className={styles.navClass}>
-        <Link href="/" aria-label="home" className={styles.linkLogo}>
+        <Link href='/' aria-label='home' className={styles.linkLogo}>
           <Image
-            propName="logo"
-            alt="Logo"
+            propName='logo'
+            alt='Logo'
             maxWidth={300}
             imageClassName={styles.imageClass}
           />
         </Link>
         <div className={styles.containerMenuItems}>
           <Repeater
-            propName="menuItems"
+            propName='menuItems'
             itemProps={{ mobileRef: ref, setMobileMenuOpen }}
           />
         </div>
         <div className={styles.containerButtons}>
           <Repeater
-            propName="buttons"
+            propName='buttons'
             itemProps={{ simpleAnchorLink: true }}
             renderWrapper={(items) => (
               <div className={styles.buttonsWrapper}>{items}</div>
@@ -63,7 +63,7 @@ const Header: types.Brick<HeaderProps> = ({}) => {
         {/* DARK MODE BUTTON */}
         {mounted && (
           <button
-            type="button"
+            type='button'
             className={styles.darkModeButton}
             onClick={toggleColorMode}
           >
@@ -91,7 +91,7 @@ const Header: types.Brick<HeaderProps> = ({}) => {
           {mobileMenuOpen && (
             <div className={styles.containerHamburgerMenuItems}>
               <Repeater
-                propName="menuItems"
+                propName='menuItems'
                 itemProps={{
                   mobileRef: ref,
                   setMobileMenuOpen,
