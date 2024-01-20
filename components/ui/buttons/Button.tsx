@@ -1,24 +1,20 @@
-type ButtonProps = {
-    text: string
-    type: 'active' | 'outline'
-    size: 'xs' | 'sm' | 'md' | 'lg'
-    brandColor:
-        | 'neutral'
-        | 'primary'
-        | 'secondary'
-        | 'accent'
-        | 'ghost'
-        | 'link'
-}
-function Button({ text, type, size, brandColor }: ButtonProps): JSX.Element {
-    const buttonStyles: string[] = [
-        'btn',
-        `btn-${brandColor}`,
-        `btn-${type}`,
-        `btn-${size}`
-    ]
+import classnames from 'classnames'
 
-    return <button className={buttonStyles.join(' ')}>{text}</button>
+type ButtonProps = {
+    children: React.ReactNode
+    size: 'sm' | 'lg'
+}
+const Button: React.FC<ButtonProps> = ({ children, size }: ButtonProps) => {
+    return (
+        <button
+            className={classnames('btn', 'btn-primary', 'btn-outline', {
+                'btn-lg': size === 'lg',
+                'btn-sm': size === 'sm'
+            })}
+        >
+            {children}
+        </button>
+    )
 }
 
 export default Button

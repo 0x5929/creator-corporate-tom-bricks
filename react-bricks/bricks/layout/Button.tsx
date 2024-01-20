@@ -25,7 +25,7 @@ const Button: types.Brick<ButtonProps> = ({
     variant,
     padding,
     className
-}) => {
+}: ButtonProps) => {
     const target = isTargetBlank
         ? { target: '_blank', rel: 'noopener noreferrer' }
         : {}
