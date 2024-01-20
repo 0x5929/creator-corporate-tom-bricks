@@ -6,35 +6,15 @@ export default {
     tags: ['autodocs']
 }
 
-export const Active = {
+export const Large = {
     args: {
-        text: 'active',
-        type: 'active',
-        size: 'md',
-        brandColor: 'primary'
-    }
-}
-export const Outline = {
-    args: {
-        text: 'outline',
-        type: 'outline',
-        size: 'md',
-        brandColor: 'secondary'
-    }
-}
-export const LargeButton = {
-    args: {
-        text: 'large',
-        type: 'primary',
         size: 'lg',
-        brandColor: 'accent'
+        children: 'Big Button'
     }
 }
-export const Link = {
+export const Small = {
     args: {
-        text: 'link',
-        type: 'primary',
-        size: 'md',
-        brandColor: 'link'
+        size: 'sm',
+        children: 'Big Button'
     }
 }
