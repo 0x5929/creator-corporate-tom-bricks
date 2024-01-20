@@ -2,15 +2,15 @@ import React, { ReactNode, useContext, useEffect, useState } from 'react'
 import styles from '../css/layout.module.css'
 
 interface LayoutProps {
-  children?: ReactNode
+    children?: ReactNode
 }
 
 const Layout: React.FC<LayoutProps> = ({ children }) => {
-  return (
-    <div className={`${styles.container}`}>
-      <main className={styles.childrenContainer}>{children}</main>
-    </div>
-  )
+    return (
+        <div className={`${styles.container}`}>
+            <main className={styles.childrenContainer}>{children}</main>
+        </div>
+    )
 }
 
 export default Layout

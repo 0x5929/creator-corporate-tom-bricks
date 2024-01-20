@@ -8,13 +8,13 @@ import FooterLink from './FooterLink'
 import Button from './Button'
 
 const layout: types.Brick[] = [
-  Header,
-  HeaderMenuItem,
-  HeaderMenuSubItem,
-  Footer,
-  FooterColumn,
-  FooterLink,
-  Button,
+    Header,
+    HeaderMenuItem,
+    HeaderMenuSubItem,
+    Footer,
+    FooterColumn,
+    FooterLink,
+    Button
 ]
 
 export default layout

@@ -3,42 +3,42 @@ import { useRouter } from 'next/router'
 import { types } from 'react-bricks/frontend'
 
 interface NextLinkProps {
-  href: string
-  className: string
-  activeClassName: string
-  isAdmin: boolean
-  children: React.ReactNode
+    href: string
+    className: string
+    activeClassName: string
+    isAdmin: boolean
+    children: React.ReactNode
 }
 
 const NextLink: types.RenderLocalLink = ({
-  href,
-  className,
-  activeClassName,
-  isAdmin,
-  children,
+    href,
+    className,
+    activeClassName,
+    isAdmin,
+    children
 }: NextLinkProps) => {
-  const router = useRouter()
+    const router = useRouter()
 
-  let anchorClassName = ''
+    let anchorClassName = ''
 
-  if (router.asPath === href) {
-    anchorClassName = `${className} ${activeClassName}`
-  } else {
-    anchorClassName = className
-  }
+    if (router.asPath === href) {
+        anchorClassName = `${className} ${activeClassName}`
+    } else {
+        anchorClassName = className
+    }
 
-  if (isAdmin) {
+    if (isAdmin) {
+        return (
+            <Link href={href} className={anchorClassName}>
+                {children}
+            </Link>
+        )
+    }
     return (
-      <Link href={href} className={anchorClassName}>
-        {children}
-      </Link>
+        <Link href={href} className={anchorClassName}>
+            {children}
+        </Link>
     )
-  }
-  return (
-    <Link href={href} className={anchorClassName}>
-      {children}
-    </Link>
-  )
 }
 
 export default NextLink
